@@ -1,0 +1,36 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "exc-plugin-marketplace",
+  "description": "Executive Coordination plugins for Claude Code (Grok Build compatible via Claude plugin zero-config)",
+  "owner": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "plugins": [
+    {
+      "name": "executive-coordination",
+      "source": "./",
+      "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, handoffs, and action items. Writes into a shared second brain.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Rick Hightower"
+      },
+      "homepage": "https://github.com/SpillwaveSolutions/executive-coordination",
+      "repository": "https://github.com/SpillwaveSolutions/executive-coordination",
+      "license": "MIT",
+      "keywords": [
+        "chief-of-staff",
+        "priority",
+        "decision",
+        "blocker",
+        "digest",
+        "claude-code",
+        "grok-build",
+        "codex",
+        "okf",
+        "content-pack"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

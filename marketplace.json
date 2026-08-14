@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "exc-plugin-marketplace",
+  "owner": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "plugins": [
+    {
+      "name": "executive-coordination",
+      "source": "./",
+      "description": "Executive Coordination",
+      "version": "0.1.0"
+    }
+  ]
+}

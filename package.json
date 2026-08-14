@@ -1,0 +1,12 @@
+{
+  "name": "executive-coordination",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Executive Coordination \u2014 Claude Code / Grok Build / Codex plugin",
+  "scripts": {
+    "test": "python3 tests/test_exc.py",
+    "validate": "python3 scripts/exc_common.py validate --bundle sample-knowledge",
+    "init": "python3 scripts/exc_common.py init-bundle --bundle sample-knowledge --title \"Executive Coordination\" --catalogs \"priorities,decisions,blockers,escalations,handoffs,digests,action-items,risks,agenda-items,status-updates\""
+  },
+  "license": "MIT"
+}

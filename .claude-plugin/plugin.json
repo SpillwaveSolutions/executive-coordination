@@ -1,0 +1,24 @@
+{
+  "name": "executive-coordination",
+  "version": "0.1.0",
+  "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, handoffs, and action items. Writes into a shared second brain.",
+  "author": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/executive-coordination",
+  "repository": "https://github.com/SpillwaveSolutions/executive-coordination",
+  "license": "MIT",
+  "keywords": [
+    "chief-of-staff",
+    "priority",
+    "decision",
+    "blocker",
+    "digest",
+    "claude-code",
+    "grok-build",
+    "codex",
+    "okf",
+    "content-pack"
+  ]
+}
