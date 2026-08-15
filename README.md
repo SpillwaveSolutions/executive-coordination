@@ -83,7 +83,7 @@ python3 scripts/exc_common.py write \
   --type Priority \
   --folder priorities \
   --title "Example" \
-  --author "Grok Bot: Executive Coordination"
+  --author "${SECOND_BRAIN_IDENTITY:?claim an identity first: brain.py whoami --claim}"
 ```
 
 Never invent `rel` values. Never write types owned by another plugin.
