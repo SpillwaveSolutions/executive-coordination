@@ -1,13 +1,13 @@
 {
   "name": "exc-plugin-marketplace",
   "description": "Optional native Grok marketplace metadata. Grok Build already loads Claude plugins with zero config.",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "plugins": [
     {
       "name": "executive-coordination",
       "source": ".",
       "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, handoffs, and action items. Writes into a shared second brain.",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "compatibility": {
         "claude_plugin": true,
         "zero_config": true

@@ -1,80 +1,80 @@
 {
-  "version": "0.1.0",
+  "version": "0.3.0",
   "plugin": "executive-coordination",
   "types": [
     {
       "type": "Priority",
-      "folder": null,
+      "folder": "priorities",
       "description": "Ranked current focus item"
     },
     {
       "type": "Decision",
-      "folder": null,
+      "folder": "decisions",
       "description": "Settled choice with rationale"
     },
     {
       "type": "Blocker",
-      "folder": null,
+      "folder": "blockers",
       "description": "Something preventing progress"
     },
     {
       "type": "Escalation",
-      "folder": null,
+      "folder": "escalations",
       "description": "Issue raised to a higher owner"
     },
     {
       "type": "Handoff",
-      "folder": null,
+      "folder": "handoffs",
       "description": "Work transferred between agents"
     },
     {
       "type": "DailyDigest",
-      "folder": null,
+      "folder": "digests",
       "description": "Morning coordination brief"
     },
     {
       "type": "WeeklyDigest",
-      "folder": null,
+      "folder": "digests",
       "description": "Weekly rollup"
     },
     {
       "type": "AgendaItem",
-      "folder": null,
+      "folder": "agenda-items",
       "description": "Meeting or standup item"
     },
     {
       "type": "ActionItem",
-      "folder": null,
+      "folder": "action-items",
       "description": "Assigned next step with due date"
     },
     {
       "type": "StatusUpdate",
-      "folder": null,
+      "folder": "status-updates",
       "description": "Snapshot of current state"
     },
     {
       "type": "Risk",
-      "folder": null,
+      "folder": "risks",
       "description": "Potential future problem"
     },
     {
       "type": "Dependency",
-      "folder": null,
+      "folder": "dependencies",
       "description": "Work that must complete first"
     },
     {
       "type": "MeetingNote",
-      "folder": null,
+      "folder": "meeting-notes",
       "description": "Captured meeting record"
     },
     {
       "type": "RoutingRule",
-      "folder": null,
+      "folder": "routing-rules",
       "description": "How work is assigned"
     },
     {
       "type": "CapacityNote",
-      "folder": null,
+      "folder": "capacity-notes",
       "description": "Who has slack this week"
     }
   ]
