@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.2 — 2026-08-17
+
+- **DailyDigest / WeeklyDigest are CoS-only.** Pack `actors.json` restricts
+  those types to `grok-bot/executive-coordination`. A CTO actor
+  (`grok-bot/spillwave-cto`) may still write Decision / Priority / Risk.
+  Fail-closed in `exc_common.py write`.
+- Vendored `scripts/sbc_actors.py` from second-brain-core.
+
 ## 0.3.1 — 2026-08-16
 
 - Privacy: isolation tests use only fictional **lumenfield-detector** / **northstar-console** actors.

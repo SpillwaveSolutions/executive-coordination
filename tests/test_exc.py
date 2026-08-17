@@ -194,10 +194,63 @@ def test_sample_pack_walks():
     assert len(data.get("nodes") or []) >= 3, data
 
 
+def test_dailydigest_cos_only_cto_denied():
+    with tempfile.TemporaryDirectory() as td:
+        bundle = Path(td) / "knowledge"
+        r = run("init-bundle", "--bundle", str(bundle), "--title", "Test", "--catalogs", "digests")
+        assert r.returncode == 0, r.stdout + r.stderr
+        denied = run(
+            "write",
+            "--bundle",
+            str(bundle),
+            "--type",
+            "DailyDigest",
+            "--folder",
+            "digests",
+            "--title",
+            "CTO must not write this",
+            "--author",
+            "grok-bot/spillwave-cto",
+        )
+        assert denied.returncode != 0, denied.stdout
+        err = json.loads(denied.stdout)
+        assert err["error"] == "actor may not write this type"
+        assert err["type"] == "DailyDigest"
+        allowed = run(
+            "write",
+            "--bundle",
+            str(bundle),
+            "--type",
+            "DailyDigest",
+            "--folder",
+            "digests",
+            "--title",
+            "Morning brief",
+            "--author",
+            "grok-bot/executive-coordination",
+        )
+        assert allowed.returncode == 0, allowed.stdout + allowed.stderr
+        cto_decision = run(
+            "write",
+            "--bundle",
+            str(bundle),
+            "--type",
+            "Decision",
+            "--folder",
+            "decisions",
+            "--title",
+            "CTO may still decide",
+            "--author",
+            "grok-bot/spillwave-cto",
+        )
+        assert cto_decision.returncode == 0, cto_decision.stdout + cto_decision.stderr
+
+
 if __name__ == "__main__":
     test_sample_validates()
     test_write_requires_author()
     test_init_and_write()
     test_isolation_two_sessions_do_not_clobber()
     test_sample_pack_walks()
+    test_dailydigest_cos_only_cto_denied()
     print("ok")
