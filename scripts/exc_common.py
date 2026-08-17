@@ -250,7 +250,14 @@ def cmd_write(args) -> int:
     if typ not in OWNED_TYPES and typ not in {"Index"}:
         print(json.dumps({"error": f"type not owned by this pack: {typ}", "owned": sorted(OWNED_TYPES)}))
         return 1
+    script_dir = Path(__file__).resolve().parent
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
+    from sbc_actors import require_type_allowed  # noqa: WPS433
+
+    require_type_allowed(author, typ, start=Path.cwd(), pack_root=script_dir.parent)
     slug = args.slug or slugify(args.title)
+
     folder = args.folder or OWNED_TYPES.get(typ, folder_from_type(typ))
     dest = bundle / folder / f"{slug}.md"
     host = os.environ.get("SECOND_BRAIN_HOST", "")

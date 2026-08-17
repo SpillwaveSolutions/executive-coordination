@@ -29,6 +29,11 @@ your role and follow the rules below.
   `SECOND_BRAIN_IDENTITY=grok-bot/executive-coordination`
 - Do **not** use a single shared `knowledge/.identity.json` for a fleet.
 - Chat prefix: `Grok Bot: Chief of Staff`
+- DailyDigest and WeeklyDigest are **CoS-only** (`grok-bot/executive-coordination`).
+  A CTO actor on this pack (`grok-bot/spillwave-cto`) may write Decision,
+  Priority, Risk, StatusUpdate — not digests. Pack roots are packing hints,
+  not access control.
+
 
 ## Isolation
 

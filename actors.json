@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "restrict": {
+    "DailyDigest": ["grok-bot/executive-coordination"],
+    "WeeklyDigest": ["grok-bot/executive-coordination"]
+  }
+}
