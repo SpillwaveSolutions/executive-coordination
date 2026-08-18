@@ -11,7 +11,7 @@
       "name": "executive-coordination",
       "source": "./",
       "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, handoffs, and action items. Writes into a shared second brain.",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "author": {
         "name": "Rick Hightower"
       },
