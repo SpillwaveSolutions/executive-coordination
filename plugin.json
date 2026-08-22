@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "executive-coordination",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, and action items.",
   "author": {
     "name": "Rick Hightower",
@@ -16,6 +16,8 @@
     "decision",
     "second-brain",
     "agent-plugins",
-    "cursor"
+    "cursor",
+    "worklog",
+    "wiki-ticket-sdd"
   ]
 }

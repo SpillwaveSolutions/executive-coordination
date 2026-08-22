@@ -1,6 +1,6 @@
 {
   "name": "executive-coordination",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Chief-of-staff ContentPack: priorities, decisions, blockers, escalations, digests, handoffs, and action items. Writes into a shared second brain.",
   "author": {
     "name": "Rick Hightower",
@@ -19,6 +19,8 @@
     "grok-build",
     "codex",
     "okf",
-    "content-pack"
+    "content-pack",
+    "worklog",
+    "wiki-ticket-sdd"
   ]
 }
